@@ -1,4 +1,10 @@
-function PokemonCard({ pokemon }) {
+type pokemonProps = {
+    pokemon: {
+        name: string;
+        imgSrc?: string;
+    }
+}
+function PokemonCard({ pokemon }: pokemonProps) {
 
     return (
     <figure>

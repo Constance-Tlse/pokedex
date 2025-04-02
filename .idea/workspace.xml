@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec477acb-22f7-49ad-9067-945edc36f470" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pokedex/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pokedex/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pokedex/src/component/PokemonCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pokedex/src/component/PokemonCard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pokedex/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/pokedex/tsconfig.app.json" afterDir="false" />
     </list>
@@ -47,7 +47,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "props.1",
+    "git-widget-placeholder": "props.2",
     "javascript.nodejs.core.library.configured.version": "22.14.0",
     "javascript.nodejs.core.library.typings.version": "22.13.16",
     "node.js.detected.package.eslint": "true",
@@ -85,7 +85,7 @@
       <workItem from="1743580250511" duration="259000" />
       <workItem from="1743580545431" duration="45000" />
       <workItem from="1743581275345" duration="7611000" />
-      <workItem from="1743590203557" duration="7533000" />
+      <workItem from="1743590203557" duration="11952000" />
     </task>
     <servers />
   </component>
