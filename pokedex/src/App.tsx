@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import NavBar from "./component/NavBar.tsx";
 import PokemonCard from "./component/PokemonCard.tsx";
 
 const pokemonList = [
@@ -48,11 +49,10 @@ function App() {
     const [pokemonName, setPokemonName] = useState("bulbasaur");
     const pokemon = pokemonList.find((pokemon) => pokemon.name === pokemonName);
 
+    // quest 9 bug étape 5
     return (
     <>
-        <nav>
-            {pokemonList.map((pokemon) => <button type="button" key={pokemon.name} onClick={() => setPokemonName(pokemon.name) }>{pokemon.name}</button>)}
-        </nav>
+        <NavBar setPokemonName={setPokemonName} pokemonList={pokemonList} />
 
         <section>
             <PokemonCard pokemon={pokemon} />
