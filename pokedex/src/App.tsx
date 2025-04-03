@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import PokemonCard from "./component/PokemonCard.tsx";
 
@@ -10,15 +11,20 @@ const pokemonList = [
 
     {
         name: "mew",
+        imgSrc: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/151.png"
     },
 ];
 
 function App() {
+    const [pokemonName, setPokemonName] = useState("bulbasaur");
+    const pokemon = pokemonList.find((pokemon) => pokemon.name === pokemonName);
 
     return (
 
         <section>
-            <PokemonCard pokemon={pokemonList[0]} />
+            <PokemonCard pokemon={pokemon} />
+            <button type="button" onClick={() => setPokemonName("bulbasaur")}>bulbisaur</button>
+           <button type="button" onClick={() => setPokemonName("mew")}>mew</button>
         </section>
 
     );
