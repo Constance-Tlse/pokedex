@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useEffect } from "react";
 import "./App.css";
 import NavBar from "./component/NavBar.tsx";
 import PokemonCard from "./component/PokemonCard.tsx";
@@ -46,13 +47,20 @@ const pokemonList = [
 ];
 
 function App() {
+    useEffect(
+        () => {
+            alert("hello pokemon trainer :)");
+        },
+        []
+    );
     const [pokemonName, setPokemonName] = useState("bulbasaur");
     const pokemon = pokemonList.find((pokemon) => pokemon.name === pokemonName);
+
 
     // quest 9 bug étape 5
     return (
     <>
-        <NavBar setPokemonName={setPokemonName} pokemonList={pokemonList} />
+        <NavBar setPokemonName={setPokemonName} pokemonList={pokemonList} output={pokemonName} />
 
         <section>
             <PokemonCard pokemon={pokemon} />

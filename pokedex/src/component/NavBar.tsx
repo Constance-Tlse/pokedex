@@ -7,9 +7,13 @@ interface Pokemon {
 interface NavBarProps {
     setPokemonName: (name: string) => void;
     pokemonList: Pokemon[];
+    output: string;
 }
 
-function NavBar({setPokemonName, pokemonList}: NavBarProps) {
+
+
+function NavBar({setPokemonName, pokemonList, output}: NavBarProps) {
+        if (output === "pikachu") {alert("pika pikachu !!!");}
 
 
     return (
@@ -20,6 +24,7 @@ function NavBar({setPokemonName, pokemonList}: NavBarProps) {
 
     </>
     )
-}
+        }
+
 
 export default NavBar;
