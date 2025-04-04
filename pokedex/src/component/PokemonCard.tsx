@@ -1,7 +1,7 @@
 type pokemonProps = {
     pokemon: {
         name: string;
-        imgSrc?: string;
+        imgSrc: string;
     }
 }
 function PokemonCard({ pokemon }: pokemonProps) {

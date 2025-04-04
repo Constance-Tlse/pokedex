@@ -1,17 +1,15 @@
+interface Pokemon {
+    name: string;
+    imgSrc?: string;
+}
 
 
-function NavBar() {
+interface NavBarProps {
+    setPokemonName: (name: string) => void;
+    pokemonList: Pokemon[];
+}
 
-    interface Pokemon {
-        name: string;
-        imgSrc?: string;
-    }
-
-
-    interface NavBarProps {
-        setPokemonName: (name: string) => void;
-        pokemonList: Pokemon[];
-    }
+function NavBar({setPokemonName, pokemonList}: NavBarProps) {
 
 
     return (
